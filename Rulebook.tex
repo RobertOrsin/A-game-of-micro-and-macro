@@ -1,0 +1,348 @@
+%
+% Body text font is Palatino!
+%
+
+\documentclass[a5paper,pagesize,10pt,bibtotoc,pointlessnumbers,
+normalheadings,DIV=9,twoside=false]{scrbook}
+
+% twoside, openright
+\KOMAoptions{DIV=last}
+
+\usepackage{trajan}
+ 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\graphicspath{ {./graphics/} }
+
+\usepackage[babel,german=guillemets]{csquotes}
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05} 
+
+\usepackage{verbatim} % for comments
+\usepackage{listings} % for comments
+
+%\setlength{\parindent}{10pt}
+%\setlength{\parskip}{1.4ex plus 0.35ex minus 0.3ex}
+%\setlength{\parskip}{1.4ex plus 0.35ex minus 0.3ex}
+
+\usepackage{blindtext}
+\newcommand{\q}[1]{>>\textit{#1}<<}
+
+\title{A Game of Micro and Macro}   
+\author{Robert Zeßin} 
+\date{\today} 
+
+\begin{document}
+
+\begin{titlepage}
+		\centering{
+			{\fontsize{40}{48}\selectfont 
+			A Game of Micro and Macro}
+		}\\
+			
+		\vspace{10mm}
+		\centering{\Large{Robert Zeßin}}\\
+		\vspace{\fill}
+		\centering \large{2021}
+\end{titlepage}
+
+\newpage
+\chapter{Intro}
+
+A Game of Micro and Macro is a two-player boardgame consisting of two parts.
+
+A tabletop-style skirmish game, in which units battle against each other and a card-laying game in which both players build a base to support there units on the battlefields.
+
+The rules and materials nessecary to play this game are descriped in this book.
+
+\newpage
+\tableofcontents 
+
+
+\newpage
+\chapter{General Rules}
+
+\section{Preparation}
+Before the game starts some preparations have to be made for both parts of the game.
+
+The first action is to check who gets priority. For that matter both players roll a D6. The player with the highes value gets the first priority. Reroll on a tie.
+
+\subsection{Micro}
+The battlefield is build up. Each player picks an even amount of terrain-pices. Both players place there pices alternating on the board.
+
+The miniatures (units) used during the game a played next to the board.
+
+Both players teach each other about there units. This does not have to include possible modifications to the units made during the macro-game.
+
+Both players place a marker on the board representing the entrypoint of the macrogame.
+
+\subsection{Macro}
+Both players shuffle there decks and place them face down to the side. Buildingcards a placed in the bottom. Right in front of them is there mainbuilding card.
+
+To keep track of game stats like the amount of available ressources and lifepoints a fair amount of spindown-dice or pen and paper are in reach.
+
+\section{A turn}
+A turn is structured as follows.
+
+\begin{enumerate}
+\item the player with priority draws one cards
+\item triggered abilities of buildings and upgrades are played
+\item the player with priority takes three actions from the following list
+\begin{enumerate}
+\item command a unit in the micro-game
+\item build a unit from a building or upgrade
+\item use a card-ability
+\item play a card from its hand
+\item draw another card
+\item pass the turn
+\end{enumerate}
+\end{enumerate}
+
+After each action, the other player has the opportunity to react. As a reaction cards with the attribute \emph{instant} can be played.\\
+\\
+After each action, or reaction it is checked if the game is finished.\\
+\\
+If all actions are made, priority changes and the next turn starts.
+
+\section{End of Game}
+A game is finished if a player is not able to perform an action other then passing the turn. This player has lost the game.\\
+\\
+A game also finishes if the main-building of a player is destroyed. This player has lost the game.
+
+\section{Out of Cards}
+If a player is out of cards to draw from its deck his main-building is dealt one damage.
+
+\section{Base-range}
+Baserange descripes the radius of a base starting from the center of the base-marker. The radius changes with the number of building inside the base.
+The range of the base is always checked if the number of buildings change.
+
+The range of the base is set as follows
+
+\begin{center}
+ \begin{tabular}{||c c||} 
+ \hline
+ No. of Buildings & Radius\\
+ \hline\hline
+ 1 & 1 \\ 
+ \hline
+ 2 & 1.5 \\
+ \hline
+ 3 & 2 \\
+ \hline
+ 4 & 2.5\\
+ \hline
+ 5 & .. \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\chapter{Micro}
+
+Micro is a skirmish miniature game. Each player has a set of miniature which can come into play.
+
+Each Miniature, or type of miniature has a fixed set of attributes and skills which makes them unique.
+
+\section{Attributes}
+Each attribute, except for movement and lifepoints, is represented by a dice. The count of surfaces indicates how powerfull the attribute is.
+
+Surface count goes from 4 (D4) - weak, to 20 (D20) - strong. In between are D6, 8, 10, 12 and 16.
+
+Movement and Lifepoints are plain values between 1 and 100
+
+\begin{description}
+\item[Lifepoints (LP)]
+Amount of damage nessecary to kill a unit
+\item[Movement (M)]
+maximum amount a unit can move in centimeters
+\item[Attack (A)]
+Strength of a physical attack
+\item[Spellpower (SP)]
+Strength of a magical attack
+\item[Defence (D)]
+Ability to withstand a physical attack
+\item[Magic Defence (MD)]
+Ability to withstand a magical attack
+\end{description}
+
+\section{Roll-Off}
+In a Roll-Off both players roll a die. The attacker wins if is value is greater the the value of the defender.
+
+If a die rolls its highes possible score. The player can add seven to the value. This counts as a crit and enables smaller units to hit a big blow against bigger foes.
+
+\section{Allocating Damage}
+To deal damage from one unit to another the corresponding attributes of attacker and defender clash in a roll off.
+
+For physical damage (A) and (D) are taken to a roll off. For a magic attack (SP) and (MD).
+
+If the attack is physical or magic is the choice of the attacker, but is determined by some factores like range, visibility and the kind of items a unit has.
+
+\section{Micro-Actions}
+If a player decides to command a unit as one of his two game-actions he has the following options.
+
+\begin{enumerate}
+\item Pick a unit or unit-group
+\item Pick a unit-action and use it
+\item Pick another, or the same unit-action and use it
+\end{enumerate}
+
+\subsection{Unit-Group}
+Units of the same kind ,or bound through other rules, with a maxium distance of two to each other can be commanded as a group.
+
+\subsection{Unit-Action}
+Units have the follow actions.
+
+\begin{enumerate}
+\item Moving
+\item Physical Attack
+\item Magical Attack
+\item Entrench/Mobilize
+\end{enumerate}
+
+\subsubsection{Moving}
+The unit or group moves its maximum movement-value, or less.
+In a group, each unit uses its own movement-value. Single units of a group may loose the connection to the group. These units do not participade in other actions done by the group.
+
+\subsubsection{Physical Attack}
+To make a physical attack a unit, or group, uses its equiped weapon, or weapon set. 
+A unit can only carry one weapon, or weapon set.
+What weapon or weapon set is carried is determined by the building which produced the unit. The wilded weapon can be changed with upgrade-cards in the macro-game.
+All units start with a weapon or basic attack-effekt.\\
+\\
+Each weapon has a range in which the target has to be. Meele-weapons, e.g. Swords, have a range of one.\\
+\\
+Weapons can have extra effekts. These can be triggered on a attack or permanent effects on the carrier and its stats.\\
+\\
+All weapons can be carried by all units, if no effekt says otherwise.\\
+\\
+If a Unit dies a attacker in meele-range can pick up the defenders weapon and use it.
+
+\subsubsection{Magical Attack}
+To make a magical attack a unit needs to be able to cast a spell. Spells are upgradecards played on building in the macro-game.\\
+\\
+Spells, like weapons, have a maximum range in which the target has to be.\\
+\\
+All spells have an effekt triggered after a successfull roll off. Some spells may have effekts triggered by a lost roll off.\\
+\\
+There are some general spells useable by all units. Most of them are special to a small number of units. Those spells are accordingly marked an ther upgrade-card. Either with the name of the unit or with the symbole of the faction/race which can use the spell.\\
+\\
+A Spell targeting a friendly unit does not need a roll off\\
+\\
+Within a group, only one unit can cast a spell.
+
+\subsubsection{Entrench/Mobilize}
+A unit, or group, can entrench themself, or mobilize if it is already entrenched.
+Entrenched units, or groups, can make an attack if an enemy unit, or group, get in its attack-range.
+The attack is made emidietly, before any other attacks or actions.\\
+After the attack, the unit, or group, is mobilized.\\
+\\
+Entrenched units can note make normal moves, they first have to mobilize.
+
+\chapter{Macro}
+Macro is a card-laying game in which each players builds a base. The base is then used to build and upgrade units which are send out in the micro-game to destroy the enemy base.
+
+For that matter, each player has a custom deck of cards. A deck is made up of cards of different types.
+
+All cards have a faction- or race-symbol. A deck can only contain cards of the same symbol. Unless a rule says otherwise.
+
+\section{Cardtypes}
+Cardtypes determine where and who a card is played. The following cardtypes exist.
+
+\begin{enumerate}
+\item Buildings
+\item Upgrades
+\item Instants
+\end{enumerate}
+
+\subsection{Buildings}
+Buildings are factiondependant and marked with the factions symbol. Each Building as a number of lifepoints and a defence-attribute.
+Units can deal damage to buildings and reduce the points. If a building has no lifepoints left it is destroyed.\\
+\\
+A Building usualy has a ruletext which includes active abilities or triggered cardeffects.\\
+\\
+A Building usualy has upgradeslots, up to a maximum of three.
+Upgradeslots are colorcoded. Only cards with the same colorcode can be played on an upgradeslot of a building.
+
+\begin{figure}[t]
+\includegraphics[scale=0.6]{Building}
+\centering
+\caption{Anatomy of a building}
+\end{figure}
+
+\subsubsection{Build buildings}
+To build a building a buildingcard is selected from the pile of buildingcards next to the playingfield. Its ressource-costs need to be paid as it enters the battlefield.
+New buildings a place to the left side of the last placed building.
+
+\subsubsection{Dealing damage to buildings}
+Damage to buildings is dealt by units from the micro-game. The same rules to a roll-off apply. If a unit is in range to the base-marker of an enemy-base it attacks the most left building.
+
+\subsection{Upgrades}
+Upgrades are cards played onto buildings. Upgrades modify units and/or the buildings they are played on. Upgrades are color coded and can only be played on buildings with the same color-code.
+
+If an Upgradeslot is already used, it can be overwriten with a new upgrade.The upgrade which is overwritten has no effekt, unless another rule says otherwise.
+
+\subsection{Instants}
+Instants a one-time effekts with an effekt which is handelt directly after it is played. Instants can be played in a players turn and in the enemys turn as a reaction to an action.
+
+\section{Cardeffects and -abilities}
+Cardeffects, unless they are triggered from another event, can be activated by a player as one of there actions. A cardeffect can only be actived once per turn, unless a rules says otherwise.\\
+\\
+Triggered abilities are resolved emedetly they are triggered.\\
+\\
+Active cardeffects may have a cost which has to be payed before the effect is resolved.
+
+\chapter{Factions and Races}
+Each player has choosen a faction with which he plays a game. The choosen faction is represented by the players deck of cards, buildings and units. Each of these are kind of unique to each faction and represent a different playstyle.
+
+In this chapter, the characteristics and units of each faction is descriped.
+
+\section{Kingdoms of Men}
+
+\section{Bloodmages}
+
+\subsubsection{Keywords}
+\emph{daemonic, vishis, inconsiderate, selfdestructive}
+
+\subsubsection{Description}
+Bloodmages are mages who have choosen a very dark path. With no way of return they are dedicated to a magic with strong bonds to the underworld.
+From sacrifices and there blood the summon destructive magic only aimed for there own advantage.\\
+\\
+A bloodmage usualy is on its own, accompanied by demonic creatures, skeleton and zombies. As the sole backbone of this faction, a bloodmage is not reluctant to sacrifice its own allies to stay alive.
+
+\subsubsection{Units}
+ \begin{tabular}{||c c c c c c c||} 
+ \hline
+  & M & LP & A & D & SP & MD \\
+ \hline\hline
+ Bloodmage & 5 & 20 & D6 & D6 & D16 & D12 \\ 
+  & \multicolumn{6}{c||}{\textbf{Weapon:} Wooden Staff} \\
+  & \multicolumn{6}{c||}{\textbf{Spells:} Demonic Leech} \\
+ \hline
+
+\end{tabular}
+
+\section{Swampbeasts}
+
+\section{Mountain-Men}
+
+\section{Dwarfs}
+
+\section{???}
+
+\chapter{Arsenal}
+
+\section{Weapons}
+
+\section{Spells}
+
+\chapter{Deckbuildingrules}
+
+
+
+
+
+\end{document}
