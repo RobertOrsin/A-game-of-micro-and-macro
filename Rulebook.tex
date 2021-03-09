@@ -13,6 +13,8 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[table, svgnames, dvipsnames]{xcolor}
+\usepackage{makecell, cellspace, caption}
 
 \usepackage{graphicx}
 \graphicspath{ {./graphics/} }
@@ -475,7 +477,30 @@ A deck of cards for each player follows this rules:
 \end{enumerate}
 \end{enumerate}
 
+\chapter{Cards}
 
+\section{Buildings}
+
+\subsubsection{Kingdoms of Men}
+
+ \begin{tabular}{||l r||} 
+ \hline
+  \rowcolor{Gainsboro!60}
+Name & Cost  \\
+\hline
+Upgradeslot 1 & red  \\
+Upgradeslot 2 & green \\
+Upgradeslot 3 & green \\
+\hline
+ \multicolumn{2}{||l||}{\textbf{Ruletext:} nifty rulestext}\\
+\hline
+ 
+ \end{tabular}
+
+
+\section{Upgrades}
+
+\section{Instants}
 
 
 
