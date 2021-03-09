@@ -47,7 +47,7 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 	Upgradeslot 2 & #4 \\
 	Upgradeslot 3 & #5 \\
 	\hline
-	 \multicolumn{2}{||l||}{\textbf{Ruletext:} #6}\\
+	 \multicolumn{2}{||l||}{\parbox{14cm}{\textbf{Ruletext:} #6}}\\
 	\hline
 }
 
@@ -123,8 +123,7 @@ A turn is structured as follows.
 \item command a unit in the micro-game
 \item build a unit from a building or upgrade
 \item use a card-ability
-\item play a card from its hand
-\item draw another card
+\item play a card from his hand
 \item pass the turn
 \end{enumerate}
 \end{enumerate}
@@ -505,7 +504,9 @@ A deck of cards for each player follows this rules:
  \resizebox{\textwidth}{!}{\begin{tabular}{||l r||} 
 \card{Mainbuilding}{0}{red}{green}{green}{Summons up to 10 peasants.}{20}{D12}
 \card{Fortified Wall}{100}{none}{none}{none}{}{50}{D16}
-\card{Great Library}{50}{purple}{blue}{none}{Once per turn you may draw a card from your deck as an action.}{10}{D6}
+\card{Great Library}{50}{purple}{blue}{none}{Once per turn you may draw a card from your deck as an action.}{15}{D6}
+\card{Small Chaple}{30}{purple}{purple}{purple}{Summons up to 1 cleric}{10}{D6}
+\card{Market}{45}{white}{yellow}{white}{At the begining of your turn gain 2 gold and 2 gold for each active \\ upgrade on the market.}{10}{D4}
  \end{tabular}}
 
 
