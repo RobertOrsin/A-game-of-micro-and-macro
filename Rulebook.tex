@@ -34,6 +34,22 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 \usepackage{blindtext}
 \newcommand{\q}[1]{>>\textit{#1}<<}
 
+\newcommand{\card}[6]
+{
+	 \hline
+	  \rowcolor{Gainsboro!60}
+	#1 & #2 Gold  \\
+	\hline
+	Upgradeslot 1 & #3  \\
+	Upgradeslot 2 & #4 \\
+	Upgradeslot 3 & #5 \\
+	\hline
+	 \multicolumn{2}{||l||}{\textbf{Ruletext:} #6}\\
+	\hline
+}
+
+
+
 \title{A Game of Micro and Macro}   
 \author{Robert Zeßin} 
 \date{\today} 
@@ -484,17 +500,7 @@ A deck of cards for each player follows this rules:
 \subsubsection{Kingdoms of Men}
 
  \begin{tabular}{||l r||} 
- \hline
-  \rowcolor{Gainsboro!60}
-Name & Cost  \\
-\hline
-Upgradeslot 1 & red  \\
-Upgradeslot 2 & green \\
-Upgradeslot 3 & green \\
-\hline
- \multicolumn{2}{||l||}{\textbf{Ruletext:} nifty rulestext}\\
-\hline
- 
+\card{Mainbuilding}{0}{red}{green}{green}{Summons up to 10 peasants.}
  \end{tabular}
 
 
