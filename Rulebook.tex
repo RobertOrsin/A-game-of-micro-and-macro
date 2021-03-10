@@ -34,7 +34,7 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 \usepackage{blindtext}
 \newcommand{\q}[1]{>>\textit{#1}<<}
 
-\newcommand{\card}[8]
+\newcommand{\cardbuilding}[8]
 {
 	 \hline
 	  \rowcolor{Gainsboro!60}
@@ -42,14 +42,23 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 	\hline
 	Lifepoints & #7 \\
 	Defense & #8 \\
-	\hline
-	Upgradeslot 1 & #3  \\
-	Upgradeslot 2 & #4 \\
-	Upgradeslot 3 & #5 \\
+%	\hline
+	Upgradeslots & #3  \\
+%	Upgradeslot 1 & #3  \\
+%	Upgradeslot 2 & #4 \\
+%	Upgradeslot 3 & #5 \\
 	\hline
 	 \multicolumn{2}{||l||}{\parbox{14cm}{\textbf{Ruletext:} #6}}\\
 	\hline
 }
+
+\newcommand{\card}[2]
+{
+	 \hline
+	#1 & #2  \\
+	\hline
+}
+
 
 
 
@@ -95,7 +104,7 @@ The first action is to check who gets priority. For that matter both players rol
 \subsection{Micro}
 The battlefield is build up. Each player picks an even amount of terrain-pices. Both players place their pices alternating on the board.
 
-The miniatures (units) used during the game a played next to the board.
+The miniatures (units) used during the game a placed next to the board.
 
 Both players teach each other about their units. This does not have to include possible modifications to the units made during the macro-game.
 
@@ -505,22 +514,35 @@ A deck of cards for each player follows this rules:
 \subsubsection{Kingdoms of Men}
 
  \resizebox{\textwidth}{!}{\begin{tabular}{||l r||} 
-\card{Mainbuilding}{0}{red}{green}{green}{Summons up to 10 peasants.}{20}{D12}
-\card{Fortified Wall}{100}{none}{none}{none}{}{50}{D16}
-\card{Great Library}{50}{purple}{blue}{none}{Once per turn you may draw a card from your deck as an action.}{15}{D6}
-\card{Small Chaple}{30}{purple}{purple}{purple}{Summons up to 1 cleric}{10}{D6}
-\card{Market}{45}{white}{yellow}{white}{At the begining of your turn gain 2 gold and 2 gold for each active \\ upgrade on the market.}{10}{D4}
- \end{tabular}}
-
- \resizebox{\textwidth}{!}{\begin{tabular}{||l r||} 
-\card{Hospital}{50}{green}{none}{none}{Heals up to two units within base range by 2 lifepoints}{15}{D10}
+\cardbuilding{Mainbuilding}{0}{3}{green}{green}{Summons up to 10 peasants.}{20}{D12}
+\cardbuilding{Fortified Wall}{100}{0}{none}{none}{}{50}{D16}
+\cardbuilding{Great Library}{50}{2}{blue}{none}{Once per turn you may draw a card from your deck as an action.}{15}{D6}
+\cardbuilding{Small Chaple}{30}{3}{purple}{purple}{Summons up to 1 cleric}{10}{D6}
+\cardbuilding{Market}{45}{3}{yellow}{white}{At the begining of your turn gain 2 gold and 2 gold for each active \\ upgrade on the market.}{10}{D4}
+\cardbuilding{Hospital}{50}{1}{none}{none}{Heals up to two units within base range by 2 lifepoints}{15}{D10}
  \end{tabular}}
 
 
 \section{Upgrades}
 
 \section{Instants}
+ \resizebox{\textwidth}{!}{\begin{tabular}{||l l||} 
+\card{Doubleshift}{Until end of turn, play a building without paying its costs}
+\card{Possebilitystorm}{A player if your choice draws two cards}
+\card{Anthem of the past}{Choose a card from your discardpile and put it into your hand}
+\card{Armor up}{Choose a unit in the microgame. Until end of turn its defenceattribute is increased by two}
+\card{Brutal Taxcolector}{Gain 100 gold}
+\card{Doubleshift}{Until end of turn, play a building without paying its costs}
+\card{Possebilitystorm}{A player if your choice draws two cards}
+ \end{tabular}}
 
+
+\chapter{Word-Clarifications}
+
+\begin{description}
+\item[Marker]
+An indicator placed on the micro-battlefield.
+\end{description}
 
 
 \end{document}
