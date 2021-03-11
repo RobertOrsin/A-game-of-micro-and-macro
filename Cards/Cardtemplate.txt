@@ -5,12 +5,17 @@ Link=C:\Benutzer\robert\Desktop\Buildings.xls
 
 Zoom=92
 VISUAL=, 10, 10
-FONT=Arial,16,,#000000
-TEXT="1-{(NAME)}",[NAME],0.184%,0.257%,99.816%,15.938%,CENTER,CENTER
-FONT=Arial,12,,#000000
-TEXT=,"Faction: [FACTION]",0.368%,13.368%,100.368%,9.769%,LEFT,CENTER
-TEXT=,"Life: [LIFEPOINTS]",0%,22.108%,100.368%,9.512%,LEFT,CENTER
-TEXT=,"Defence: [DEFENCE]",0.184%,31.877%,100.368%,7.712%,LEFT,CENTER
-TEXT=,"Cost: [RESSOURCECOST]",0.368%,39.589%,100.368%,8.74%,LEFT,CENTER
-TEXT="1-{(RULETEXT)}",[RULETEXT],0.368%,50.386%,98.897%,47.301%,CENTER,CENTER
+IMAGE="1-{(PICTURES)}",[PICTURES],1.4%,4.482%,97.1%,67.227%
+FONT=Arial,12,T,#000000
+TEXT="1-{(NAME)}",[NAME],6.8%,5.602%,85.8%,6.723%,CENTER,CENTER
+FONT=Arial,6,,#000000
+TEXT="1-{(FACTION)}",[FACTION],67.4%,65.966%,10.2%,4.902%,LEFT,CENTER
+TEXT="1-{(LIFEPOINTS)}",[LIFEPOINTS],51.8%,65.406%,6.4%,5.602%,LEFT,CENTER
+TEXT="1-{(DEFENCE)}",[DEFENCE],24.1%,67.087%,5.4%,3.501%,LEFT,CENTER
+TEXT="1-{(RESSOURCECOST)}",[RESSOURCECOST],35.7%,66.667%,6.6%,3.782%,LEFT,CENTER
+TEXT="1-{(RULETEXT)}",[RULETEXT],10.9%,73.109%,77.6%,18.627%,CENTER,CENTER
+IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\shield.png",21.9%,67.227%,1.9%,3.361%
+IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\coins.png",32.6%,66.527%,2.6%,3.922%
+IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\heart.png",46.2%,65.126%,5.3%,7.703%
+IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Templates\Building.png",0%,0%,100%,100%,0,TNP
 ENDVISUAL
