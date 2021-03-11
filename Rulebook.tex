@@ -104,7 +104,7 @@ The first action is to check who gets priority. For that matter both players rol
 \subsection{Micro}
 The battlefield is build up. Each player picks an even amount of terrain-pices. Both players place their pices alternating on the board.
 
-The miniatures (units) used during the game a placed next to the board.
+The miniatures (models/units) used during the game a placed next to the board.
 
 Both players teach each other about their units. This does not have to include possible modifications to the units made during the macro-game.
 
@@ -144,16 +144,21 @@ After each action, or reaction it is checked if the game is finished.\\
 If all actions are made, priority changes and the next turn starts.
 
 \section{End of Game}
-A game is finished if a player is not able to perform an action other then passing the turn. This player has lost the game.\\
+A game is finished if the main-building of a player is destroyed. This player has lost the game.\\
 \\
-A game also finishes if the main-building of a player is destroyed. This player has lost the game.
+A game is also finished if a player is not able to perform an action other then passing the turn. This player has lost the game.\\
+\\
+Other then that, a player is alowed to concede at any time.
+
 
 \section{Out of Cards}
-If a player is out of cards to draw from its deck his main-building is dealt one damage.
+If a player is out of cards to draw from his deck his main-building is dealt one damage. This is done for each card.
+If a player needs to draw two cards, the mailbuildung is dealt two damage.\\
+
 
 \section{Base-range}
 Baserange descripes the radius of a base starting from the center of the base-marker. The radius changes with the number of building inside the base.
-The range of the base is always checked if the number of buildings change.
+The range of the base is always checked if the number of buildings change or another action needs to know the current radius.
 
 The range of the base is set as follows
 
@@ -175,6 +180,8 @@ The range of the base is set as follows
 \end{tabular}
 \end{center}
 
+The base range is needed for attack made by units against the base.
+
 
 \chapter{Micro}
 
@@ -183,7 +190,8 @@ Micro is a skirmish miniature game. Each player has a set of miniature which can
 Each Miniature, or type of miniature has a fixed set of attributes and skills which makes them unique.
 
 \section{Attributes}
-Each attribute, except for movement and lifepoints, is represented by a dice. The count of surfaces indicates how powerfull the attribute is.
+Each attribute, except for movement and lifepoints, is represented by a dice. The amount of surfaces indicates how powerfull the attribute is.
+That does not mean that you need a die for each attribute of each model. One set of dice will do.
 
 Surface count goes from 4 (D4) - weak, to 20 (D20) - strong. In between are D6, 8, 10, 12 and 16.
 
@@ -209,14 +217,17 @@ Ability to withstand a magical attack
 \section{Roll-Off}
 In a Roll-Off both players roll a die. The attacker wins if is value is greater the the value of the defender.
 
-If a die rolls its highes possible score. The player can add seven to the value. This counts as a crit and enables smaller units to hit a big blow against bigger foes.
+If a die rolls its highes possible score, the player can add seven to the value. This counts as a crit and enables smaller units to hit a big blow against bigger foes.
 
 \section{Allocating Damage}
 To deal damage from one unit to another the corresponding attributes of attacker and defender clash in a roll off.
 
 For physical damage (A) and (D) are taken to a roll off. For a magic attack (SP) and (MD).
 
-If the attack is physical or magic is the choice of the attacker, but is determined by some factores like range, visibility and the kind of items a unit has.
+If the attack is physical or magic is the choice of the attacker, but is determined by some factores like range, visibility and the kind of items a unit has.\\
+\\
+For example, if a unit is equiped with a rusty sword and knows the leech seed spell its options is to do a meele-attack with its rusty sword, if a unit is nearby, or hurl its leech seed onto a target which is within the range of the spell and can be seen by the unit.\\
+To see a unit, virtualy draw a line between the attacker and target. This line should not be interupted by any kind of terrain.
 
 \section{Micro-Actions}
 If a player decides to command a unit as one of his two game-actions he has the following options.
@@ -231,7 +242,7 @@ If a player decides to command a unit as one of his two game-actions he has the 
 Units of the same kind ,or bound through other rules, with a maxium distance of two to each other can be commanded as a group.
 
 \subsection{Unit-Action}
-Units have the follow actions.
+Units have the following actions.
 
 \begin{enumerate}
 \item Moving
@@ -253,13 +264,13 @@ All units start with a weapon or basic attack-effekt.\\
 Each weapon has a range in which the target has to be. Meele-weapons, e.g. Swords, have a range of one.\\
 \\
 Weapons can have extra effekts. These can be triggered on a attack or permanent effects on the carrier and its stats.\\
-\\
-All weapons can be carried by all units, if no effekt says otherwise.\\
-\\
-If a Unit dies a attacker in meele-range can pick up the defenders weapon and use it.
+%\\
+%All weapons can be carried by all units, if no effekt says otherwise.\\
+%\\
+%If a Unit dies a attacker in meele-range can pick up the defenders weapon and use it.
 
 \subsubsection{Magical Attack}
-To make a magical attack a unit needs to be able to cast a spell. Spells are upgradecards played on building in the macro-game.\\
+To make a magical attack a unit needs to be able to cast a spell. Spells are learnt through playing upgradecards on buildings in the macro-game.\\
 \\
 Spells, like weapons, have a maximum range in which the target has to be.\\
 \\
@@ -274,7 +285,7 @@ Within a group, only one unit can cast a spell.
 \subsubsection{Entrench/Mobilize}
 A unit, or group, can entrench themself, or mobilize if it is already entrenched.
 Entrenched units, or groups, can make an attack if an enemy unit, or group, get in its attack-range.
-The attack is made emidietly, before any other attacks or actions.\\
+The attack is made immediately, before any other attacks or actions.\\
 After the attack, the unit, or group, is mobilized.\\
 \\
 Entrenched units can note make normal moves, they first have to mobilize.
@@ -305,7 +316,7 @@ A Building has upgradeslots, up to a maximum of three.
 Upgradecards can be played onto building. Some upgrades require to be played on special buildings or have other conditions.
 
 \begin{figure}[t]
-\includegraphics[scale=0.5]{Building}
+\includegraphics[scale=1.0]{examplebuilding}
 \centering
 \caption{Anatomy of a building}
 \end{figure}
@@ -315,7 +326,9 @@ To build a building a buildingcard is selected from the pile of buildingcards ne
 New buildings a place to the left side of the last placed building.
 
 \subsubsection{Dealing damage to buildings}
-Damage to buildings is dealt by units from the micro-game. The same rules to a roll-off apply. If a unit is in range to the base-marker of an enemy-base it attacks the most left building.
+Damage to buildings is dealt by units from the micro-game. The same rules to a roll-off apply. If a unit is in range to the base-marker of an enemy-base it attacks the most left building.\\
+\\
+To deal damage to the base, or buildings, a unit needs to be in attack-range. This includes the range of its own weapon and the radius the base has, determined by the number of buildings in it.
 
 \subsection{Upgrades}
 Upgrades are cards played onto buildings. Upgrades modify units and/or the buildings they are played on. Some upgrade can only be played on certain building or have other conditions.
@@ -345,14 +358,15 @@ Each player has choosen a faction with which he plays a game. The choosen factio
 In this chapter, the characteristics and units of each faction is descriped.
 \newpage
 \section{Kingdoms of Men}
-\subsubsection{Keywords}
-\emph{mortal, many, ambitious, resilient, principled, hierachy}
 
 \subsubsection{Description}
 The Kingdoms of Men constits of many smaller kingdoms, loosely united by the high king. In times of need the high king commands all kingdoms under his banner.\\
 In a world full of inexplicable dangers humans survive due to their adaptability. Driven by their fate they seem to achive everything.\\
 \\
 In times of overall peace it is not unusual for the smaller kings to feud over the favor of the high king.
+
+\subsubsection{Keywords}
+\emph{mortal, many, ambitious, resilient, principled, hierachy}
 
 \subsubsection{Units}
  \begin{tabular}{||c c c c c c c||} 
@@ -376,14 +390,14 @@ In times of overall peace it is not unusual for the smaller kings to feud over t
 \newpage
 \section{Bloodmages}
 
-\subsubsection{Keywords}
-\emph{daemonic, vishis, inconsiderate, selfdestructive}
-
 \subsubsection{Description}
 Bloodmages are mages who have choosen a very dark path. With no way of return they are dedicated to a magic with strong bonds to the underworld.
 From sacrifices and their blood the summon destructive magic only aimed for their own advantage.\\
 \\
 A bloodmage usualy is on its own, accompanied by demonic creatures, skeleton and zombies. As the sole backbone of this faction, a bloodmage is not reluctant to sacrifice its own allies to stay alive.
+
+\subsubsection{Keywords}
+\emph{daemonic, vicious, inconsiderate, selfdestructive}
 
 \subsubsection{Units}
  \begin{tabular}{||c c c c c c c||} 
@@ -407,14 +421,14 @@ A bloodmage usualy is on its own, accompanied by demonic creatures, skeleton and
 \newpage
 \section{Swampbeasts}
 
-\subsubsection{Keywords}
-\emph{hidden, predator, ambush, one with nature, claws and teeth}
-
 \subsubsection{Description}
 The creatures of the swamps around the human towns and villiages in the marshes seem to have a collective mind.\\
 Merchants tell stories about coordinated attacks against their tracks. Big buildingprojects in the area of the highking are mysteriously sobotaged.\\
 \\
 The mumble is that few highly intelligent creates controll the whole fauna.
+
+\subsubsection{Keywords}
+\emph{hidden, predator, ambush, one with nature, claws and teeth}
 
 \subsubsection{Units}
 
@@ -422,33 +436,30 @@ The mumble is that few highly intelligent creates controll the whole fauna.
 \newpage
 \section{Mountain-Men}
 
-\subsubsection{Keywords}
-\emph{few, hermit, mysterious, sorcerer}
-
 \subsubsection{Description}
 
+\subsubsection{Keywords}
+\emph{few, hermit, mysterious, sorcerer}
 
 \subsubsection{Units}
 
 \newpage
 \section{Dwarfs}
 
-\subsubsection{Keywords}
-\emph{}
-
 \subsubsection{Description}
 
+\subsubsection{Keywords}
+\emph{}
 
 \subsubsection{Units}
 
 \newpage
 \section{???}
 
-\subsubsection{Keywords}
-\emph{}
-
 \subsubsection{Description}
 
+\subsubsection{Keywords}
+\emph{}
 
 \subsubsection{Units}
 

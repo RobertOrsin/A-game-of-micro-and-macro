@@ -1,25 +1,25 @@
-CARDSIZE=8.89,6.35
+CARDSIZE=8.89, 6.35
 
 LinkMulti = Amount
 Link=C:\Benutzer\robert\Desktop\Buildings.xls
 
 Zoom=92
 VISUAL=, 10, 10
-IMAGE="1-{(PICTURES)}",[PICTURES],0.7%,12.185%,98.9%,63.305%
+IMAGE="1-{(PICTURES)}",[PICTURES],0.769%,12.113%,98.846%,63.392%
 FONT=Arial,8,T,#000000
-IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Templates\Building.png",0%,0%,100%,100%,0,TNP
-TEXT="1-{(FACTION)}",[FACTION],84.7%,7.283%,13.9%,4.902%,CENTER,CENTER
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Templates\Building.png,0%,0%,100%,100%,0,TNP
+TEXT="1-{(FACTION)}",[FACTION],84.712%,7.268%,13.846%,4.98%,CENTER,CENTER
 FONT=Arial,6,,#000000
-TEXT="1-{(LIFEPOINTS)}",[LIFEPOINTS],8.8%,66.807%,6%,5.042%,CENTER,CENTER
-TEXT="1-{(RESSOURCECOST)}",[RESSOURCECOST],43.2%,66.807%,6%,5.042%,CENTER,CENTER
-TEXT="1-{(DEFENCE)}",[DEFENCE],75.5%,66.807%,6%,5.042%,CENTER,CENTER
-CIRCLE=,1.9%,65.686%,6.7%,7.703%,#FFFFFF
-CIRCLE=,36.6%,65.686%,6%,7.563%,#FFFFFF
-CIRCLE=,68.3%,65.686%,6.6%,7.843%,#FFFFFF
-IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\coins.png",37.1%,66.106%,5.4%,6.863%,0,T
-IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\shield.png",69.8%,67.227%,3.7%,4.902%,0,T
-IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Symbols\heart.png",2.6%,65.826%,5.3%,7.983%,0,T
+TEXT="1-{(LIFEPOINTS)}",[LIFEPOINTS],8.846%,66.756%,5.962%,5.114%,CENTER,CENTER
+TEXT="1-{(RESSOURCECOST)}",[RESSOURCECOST],50.288%,66.756%,5.962%,5.114%,CENTER,CENTER
+TEXT="1-{(DEFENCE)}",[DEFENCE],91.25%,66.756%,5.962%,5.114%,CENTER,CENTER
+CIRCLE=,1.827%,65.68%,6.731%,7.672%,#FFFFFF
+CIRCLE=,43.462%,65.68%,5.865%,7.537%,#FFFFFF
+CIRCLE=,84.135%,65.68%,6.635%,7.806%,#FFFFFF
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\coins.png,43.75%,66.083%,5.481%,6.864%,0,T
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\shield.png,85.673%,67.295%,3.846%,5.249%,0,T
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\heart.png,2.596%,65.814%,5.288%,7.941%,0,T
 FONT=Arial,12,T,#000000
-TEXT="1-{(RULETEXT)}",[RULETEXT],1.4%,74.51%,97.1%,23.669%,CENTER,CENTER
-TEXT="1-{(NAME)}",[NAME],1.8%,2.941%,82.5%,9.944%,LEFT,CENTER
+TEXT="1-{(RULETEXT)}",[RULETEXT],1.442%,74.428%,97.115%,23.688%,CENTER,CENTER
+TEXT="1-{(NAME)}",[NAME],1.731%,2.961%,82.5%,9.96%,LEFT,CENTER
 ENDVISUAL
