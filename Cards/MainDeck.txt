@@ -1,0 +1,16 @@
+CARDSIZE=6.35, 8.89
+
+LinkMulti = Amount
+Link=C:\Benutzer\robert\Desktop\MainDeck.xls
+
+Zoom=92
+
+
+VISUAL=, 10, 10
+IMAGE="1-{(PICTURES)}",[PICTURES],0%,9.1%,100%,52.1%
+IMAGE=,"C:\Users\RobertO\Documents\TTRPG TO GO\A-game-of-micro-and-macro\Cards\Graphics\Templates\Maindeckcard.png",0%,0%,100%,100%,0,N
+FONT=Arial,8,T,#000000
+TEXT="1-{(TYPE)}",[TYPE],1.821%,12.8%,28.151%,4.5%,CENTER
+TEXT="1-{(NAME)}",[NAME],1.681%,1.4%,96.078%,7.3%,LEFT
+TEXT="1-{(RULETEXT)}",[RULETEXT],4.342%,63.1%,89.916%,33.5%,CENTER,WWCENTER
+ENDVISUAL
