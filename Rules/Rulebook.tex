@@ -408,6 +408,10 @@ A bloodmage usually is on its own, accompanied by demonic creatures, skeleton an
   & \multicolumn{6}{l||}{\textbf{Weapon:} Wooden Staff} \\
   & \multicolumn{6}{l||}{\textbf{Spells:} Demonic Leech} \\
  \hline
+ Blood Knight & 6 & 15 & D12 & D8 & D6 & D8 \\
+  & \multicolumn{6}{l||}{\textbf{Weapon:} Felsword} \\
+  & \multicolumn{6}{l||}{\textbf{Spells:} Beacon of Evil} \\
+ \hline
  Skeleton & 3 & 7 & D4 & D6 & D4 & D6 \\
   & \multicolumn{6}{l||}{\textbf{Weapon:} Rusty Sword} \\
   & \multicolumn{6}{l||}{\textbf{Spells:} Masters Presence} \\
@@ -415,6 +419,10 @@ A bloodmage usually is on its own, accompanied by demonic creatures, skeleton an
  Direwolf & 8 & 8 & D10 & D6 & D4 & D4 \\
   & \multicolumn{6}{l||}{\textbf{Weapon:} Teeth} \\
   & \multicolumn{6}{l||}{\textbf{Spells:} Infectious bite} \\
+\hline
+Ghoul & 3 & 8 & D6 & D6 & D12 & D12 \\
+  & \multicolumn{6}{l||}{\textbf{Weapon:} Claws} \\
+  & \multicolumn{6}{l||}{\textbf{Spells:} Fel Mortar} \\
 \hline
 \end{tabular}
 
@@ -467,7 +475,7 @@ The mumble is that few highly intelligent creates control the whole fauna.
 
 \section{Weapons}
 
- \begin{tabular}{||c c c c||} 
+ \resizebox{\textwidth}{!}{\begin{tabular}{||c c c c||} 
  \hline
  Weapon & Range & Damage & Ability \\
 \hline \hline
@@ -479,8 +487,12 @@ Sword and Board & 1 & 3 & Increase defense by one \\
 \hline
 Teeth & 1 & 3 & \\
 \hline
+Felsword & 1 & 4 & Heal for 1 damage on a successfull attack \\
+\hline
+Claws & 1 & 1 & \\
+\hline
  
- \end{tabular}
+ \end{tabular}}
 \newpage
 \section{Spells}
 
@@ -508,8 +520,14 @@ Active. Choose a friendly unit within 6. This unit makes one attack action.
 \newpage
 \subsection{Bloodmages}
 
+\subsubsection{Beacon of Evil}
+Passive. If a skeleton is summoned, it can be placed in range 2 around this unit.
+
 \subsubsection{Demonic Leech}
 Active. Hurls a demonic leech onto an enemy. Deals 8 damage, heals 4 life-points.
+
+\subsubsection{Fel Mortar}
+Active. Choose an enemy unit within 10. Roll a D6. Apply the rolled value as damage.
 
 \subsubsection{Infectious bite}
 Passive. On a successful attack lower the movement-attribute of the target by one.
