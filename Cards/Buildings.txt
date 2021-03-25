@@ -1,25 +1,28 @@
 CARDSIZE=8.89, 6.35
 
 LinkMulti = Amount
-Link=C:\Benutzer\robert\Desktop\Buildings.xls
+Link=C:\Benutzer\robert\Desktop\Buildings - Bloodmage.xls
 
 Zoom=92
 VISUAL=, 10, 10
 IMAGE="1-{(PICTURES)}",[PICTURES],0.769%,12.113%,98.846%,63.392%
 FONT=Arial,8,T,#000000
-IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Templates\Building.png,0%,0%,100%,100%,0,TNP
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Templates\Building.png,-0.096%,0%,100%,100%,0,TNP
 TEXT="1-{(FACTION)}",[FACTION],84.712%,7.268%,13.846%,4.98%,CENTER,CENTER
-FONT=Arial,6,,#000000
-TEXT="1-{(LIFEPOINTS)}",[LIFEPOINTS],8.846%,66.756%,5.962%,5.114%,CENTER,CENTER
-TEXT="1-{(RESSOURCECOST)}",[RESSOURCECOST],50.288%,66.756%,5.962%,5.114%,CENTER,CENTER
-TEXT="1-{(DEFENCE)}",[DEFENCE],91.25%,66.756%,5.962%,5.114%,CENTER,CENTER
+FONT=Arial,10,,#000000
+TEXT="1-{(LIFEPOINTS)}",[LIFEPOINTS],8.846%,66.756%,7.019%,5.114%,CENTER,CENTER
+TEXT="1-{(RESSOURCECOST)}",[RESSOURCECOST],50.288%,66.756%,7.308%,5.114%,CENTER,CENTER
+TEXT="1-{(DEFENCE)}",[DEFENCE],88.75%,66.756%,8.462%,5.114%,CENTER,CENTER
 CIRCLE=,1.827%,65.68%,6.731%,7.672%,#FFFFFF
-CIRCLE=,43.462%,65.68%,5.865%,7.537%,#FFFFFF
-CIRCLE=,84.135%,65.68%,6.635%,7.806%,#FFFFFF
+CIRCLE=,43.462%,65.68%,5.769%,7.537%,#FFFFFF
+CIRCLE=,81.442%,65.68%,6.635%,7.806%,#FFFFFF
 IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\coins.png,43.75%,66.083%,5.481%,6.864%,0,T
-IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\shield.png,85.673%,67.295%,3.846%,5.249%,0,T
+IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\shield.png,83.173%,67.295%,4.038%,5.384%,0,T
 IMAGE=,C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Graphics\Symbols\heart.png,2.596%,65.814%,5.288%,7.941%,0,T
+FONT=Arial,9,T,#000000
+TEXT="1-{(RULETEXT)}",[RULETEXT],1.442%,74.428%,97.115%,23.688%,CENTER,WWCENTER
 FONT=Arial,12,T,#000000
-TEXT="1-{(RULETEXT)}",[RULETEXT],1.442%,74.428%,97.115%,23.688%,CENTER,CENTER
 TEXT="1-{(NAME)}",[NAME],1.731%,2.961%,82.5%,9.96%,LEFT,CENTER
 ENDVISUAL
+
+display= deck.png
