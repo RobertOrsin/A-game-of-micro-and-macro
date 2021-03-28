@@ -116,7 +116,7 @@ Both players shuffle their decks and place them face down to the side. Building-
 To keep track of game stats like the amount of available resources and life-points a fair amount of spin-down-dice or pen and paper are in reach.
 
 \begin{figure}[t]
-\includegraphics[scale=0.25]{Boardoverview}
+\includegraphics[scale=0.325]{Boardoverview}
 \centering
 \caption{Overview of a fresh game}
 \end{figure}
@@ -196,6 +196,10 @@ That does not mean that you need a die for each attribute of each model. One set
 Surface count goes from 4 (D4) - weak, to 20 (D20) - strong. In between are D6, 8, 10, 12 and 16.
 
 If something causes an attribute to increase by an amount, it means ti increase the die used. For example if a unit has an attack of D4. an increase by two ups it to D8.\\
+An attribute can be increased passed a D20, the next value would be a D20.
+
+Whenever a stat is rolled for which no die is available, f.e. D16 or D24, two dice are rolled (D12 + D4 and D20 + D4).\\
+To land a crit, both dice need their highes value.\\
 \\
 Movement and life-points are plain values between 1 and 100
 
@@ -307,7 +311,7 @@ Card-types determine where and who a card is played. The following card-types ex
 \end{enumerate}
 
 \subsection{Buildings}
-Buildings are faction-dependent and marked with the factions symbol. Each Building as a number of life-points and a defense-attribute.
+Buildings are faction-dependent and marked with the factions symbol. Each Building has a number of life-points and a defense-attribute.
 Units can deal damage to buildings and reduce the points. If a building has no life-points left it is destroyed.\\
 \\
 A Building usually has a rule-text which includes active abilities or triggered card-effects.\\
@@ -323,7 +327,11 @@ Upgrade-cards can be played onto building. Some upgrades require to be played on
 
 \subsubsection{Build buildings}
 To build a building a building-card is selected from the pile of building-cards next to the playing-field. Its resource-costs need to be paid as it enters the battlefield.
-New buildings a place to the left side of the last placed building.
+New buildings are placed to the left side of the last placed building.
+
+A maximum of 5 buildings can be played, including the mainbuilding.\\
+\\
+An existing building, excluding the mainbuilding, can be overbuild by a new one. For that matter. half the cost of the old building have to be paid to tear it down. Discard the old building and old its upgradecards if no other rules says otherwise.
 
 \subsubsection{Dealing damage to buildings}
 Damage to buildings is dealt by units from the micro-game. The same rules to a roll-off apply. If a unit is in range to the base-marker of an enemy-base it attacks the most left building.\\
@@ -390,7 +398,6 @@ Cleric & 5 & 8 & D4 & D6 & D12 & D10 \\
  \hline
  Aristocrat & 6 & 12 & D8 & D10 & D8 & D10 \\
    & \multicolumn{6}{l||}{\textbf{Weapon:}Dueling Sword} \\
-  & \multicolumn{6}{l||}{\textbf{Spells:} none} \\
  \hline
 
 \end{tabular}
@@ -563,10 +570,9 @@ A deck of cards for each player follows this rules:
 \item All cards have the same faction symbol or are at least neutral
 \item Suggestion: All Upgrade-cards should be playable on the selected building-cards.
 \end{enumerate}
-\item In addition has a deck a maximum of 10 building-cards
+\item In addition a deck has a maximum of 7 building-cards
 \begin{enumerate}
 \item All cards have the same faction symbol or are at least neutral
-\item The total resource-costs of all building-cards shall not be greater then 300 or any other previously agreed amount
 \end{enumerate}
 \end{enumerate}
 
@@ -630,6 +636,11 @@ TBC
 \section{Mountain-Kings}
 
 mountainmen vs dwarfs
+
+\newpage
+\section{Swamp-Kings}
+
+Overview of the Kings from the Kingdoms of Men ruling over the swamps, and their shady deals with the bloodmages.
 
 
 
