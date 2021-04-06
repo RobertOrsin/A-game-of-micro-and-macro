@@ -1,7 +1,7 @@
 CARDSIZE=8.89, 6.35
 
 LinkMulti = Amount
-Link=C:\Benutzer\robert\Desktop\Buildings - Bloodmage.xls
+Link=C:\Users\rober\Documents\GitHub\A-game-of-micro-and-macro\Cards\Buildings - Humans.xls
 
 Zoom=92
 VISUAL=, 10, 10
@@ -25,4 +25,4 @@ FONT=Arial,12,T,#000000
 TEXT="1-{(NAME)}",[NAME],1.731%,2.961%,82.5%,9.96%,LEFT,CENTER
 ENDVISUAL
 
-display= deck.png
+display= buildings_human.png
