@@ -137,7 +137,7 @@ The range of the base is set as follows
 \begin{center}
  \begin{tabular}{||c c||} 
  \hline
- No. of Buildings & Radius\\
+ No. of Buildings & Radius [cm]\\
  \hline\hline
  1 & 1 \\ 
  \hline
@@ -179,7 +179,7 @@ Movement and life-points are plain values between 1 and 100
 \item[Life-points (LP)]
 Amount of damage necessary to kill a unit
 \item[Movement (M)]
-maximum amount a unit can move in centimeters
+maximum range in cm a unit can move
 \item[Attack (A)]
 Strength of a physical attack
 \item[Spell-power (SP)]
@@ -215,7 +215,7 @@ If a player decides to command a unit as one of his two game-actions he has the 
 \end{enumerate}
 
 \subsection{Unit-Group}
-Units of the same kind ,or bound through other rules, with a maximum distance of two to each other can be commanded as a group.
+Units of the same kind, or bound through other rules, with touching bases can be commanded as a group.
 
 \subsection{Unit-Action}
 Units have the following actions.
@@ -229,7 +229,7 @@ Units have the following actions.
 \end{enumerate}
 
 \subsubsection{Moving}
-The unit or group moves its maximum movement-value, or less.
+The unit or group moves its maximum movement-value in cm, or less.
 In a group, each unit uses its own movement-value. Single units of a group may loose the connection to the group. These units do not participate in other actions done by the group.
 
 \subsubsection{Physical Attack}
@@ -588,7 +588,7 @@ Dueling Sword & 1 & 5 & Attack after getting attacked \\
 \subsection{General}
 
 \subsubsection{Commanding presence}
-Passive. Units close to this unit have an increase attack-attribute by one.
+Passive. Units within a 5 cm radius to this unit have an increase attack-attribute by one.
 
 
 \newpage
@@ -604,31 +604,31 @@ Passive. Increases the magic-defense-attribute of friendly units within 3 by one
 Passive. This unit can be grouped with units of different kind. Those units movement-attribute is increased by 2.
 
 \subsubsection{Mobstrength}
-Passive. If at least 4 units of the same type with this spell are close to each other their attack and defend ability is increased by one.
+Passive. If at least 4 units of the same type with this spell are in a group, their attack and defend ability is increased by one.
 
 \subsubsection{Thats an order!}
-Active. Choose a friendly unit within 6. This unit makes one attack action.
+Active. Choose a friendly unit within 6 cm. This unit makes one attack action.
 
 \newpage
 \subsection{Bloodmages}
 
 \subsubsection{Beacon of Evil}
-Passive. If a skeleton is summoned, it can be placed in range 2 around this unit.
+Passive. If a skeleton is summoned, it can be placed in a 2cm radius around this unit.
 
 \subsubsection{Demonic Leech}
-Active. Hurls a demonic leech onto an enemy. Deals 8 damage, heals 4 life-points.
+Active. Hurls a demonic leech onto an enemy. Deals 8 damage, heals 4 life-points. 8 cm range.
 
 \subsubsection{Fel Mortar}
-Active. Choose an enemy unit within 10. Roll a D6. Apply the rolled value as damage.
+Active. Choose an enemy unit within 10 cm range. Roll a D6. Apply the rolled value as damage.
 
 \subsubsection{Infectious bite}
 Passive. On a successful attack lower the movement-attribute of the target by one.
 
 \subsubsection{Masters Presence}
-Passive. If the unit is near a bloodmage its movement-attribute is increased by 2.
+Passive. If the unit is within a 2 cm radius of a bloodmage its movement-attribute is increased by 2.
 
 \subsubsection{Unholy Presence}
-Skeletons within range 5 have their defense-attribute increased by 1.
+Skeletons within a 5cm radius have their defense-attribute increased by 1.
 
 \subsubsection{Persistence of the Undead}
 Passive. If dealt damage. Roll a D6. On a 5 or 6 only apply half the damage, rounded down.
@@ -640,7 +640,7 @@ Passive. If dealt damage. Roll a D6. On a 5 or 6 only apply half the damage, rou
 \subsection{Mountain-Men}
 
 \subsubsection{Hermit}
-Passive. If no other friendly unit is within 10. Movement-Attribute is increased by 3. Attack and Defense-Attribute are increased by 1.
+Passive. If no other friendly unit is within a 10cm radius. Movement-Attribute is increased by 3. Attack and Defense-Attribute are increased by 1.
 
 \newpage
 \subsection{Dwarfs}
@@ -650,7 +650,7 @@ Passive. If no other friendly unit is within 10. Movement-Attribute is increased
 A deck of cards for each player follows this rules:
 
 \begin{enumerate}
-\item The maindeck contains 50 cards maximum and 40 cards minimum
+\item The maindeck contains 40 cards maximum and 30 cards minimum
 \begin{enumerate}
 \item All cards have the same faction symbol or are at least neutral
 \item Suggestion: All Upgrade-cards should be playable on the selected building-cards.
